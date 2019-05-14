@@ -16,6 +16,7 @@ public class Client {
     public String getNif()     { return nif;     }
     public String getNom()     { return nom;     }
     public String getTelefon() { return telefon; }
+    public ArrayList<Lloguer> getLloguers() { return lloguers; }
 
     public void setNif(String nif) { this.nif = nif; }
     public void setNom(String nom) { this.nom = nom; }
@@ -39,5 +40,25 @@ public class Client {
     public String informe() {
         // XXX: de moment buit
         return null;
+    }
+
+    public int size() {
+        return lloguers.size();
+    }
+
+    public String getMarca(Lloguer lloguer) {
+        return lloguer.getMarca(lloguer.getVehicle());
+    }
+
+    public String getModel(Lloguer lloguer) {
+        return lloguer.getModel(lloguer.getVehicle());
+    }
+
+    public String getData(Lloguer lloguer) {
+        return lloguer.getData();
+    }
+
+    public String getDies(Lloguer lloguer) {
+        return lloguer.getDies();
     }
 }

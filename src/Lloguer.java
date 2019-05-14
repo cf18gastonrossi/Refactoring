@@ -25,4 +25,16 @@ public class Lloguer {
     public void setDies(String dies) {
         this.dies = dies;
     }
+
+    public String getMarca(Vehicle vehicle) {
+        return vehicle.getMarca();
+    }
+
+    public String getModel(Vehicle vehicle) {
+        return vehicle.getModel();
+    }
+
+    public Vehicle getVehicle(){
+        return this.vehicle;
+    }
 }

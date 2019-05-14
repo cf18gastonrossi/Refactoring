@@ -1,10 +1,10 @@
 public class Lloguer {
 
     private String data;
-    private String dies;
+    private int dies;
     private Vehicle vehicle;
 
-    public Lloguer(String data, String dies, Vehicle vehicle) {
+    public Lloguer(String data, int dies, Vehicle vehicle) {
         this.data = data;
         this.dies = dies;
         this.vehicle = vehicle;
@@ -18,11 +18,11 @@ public class Lloguer {
         this.data = data;
     }
 
-    public String getDies() {
+    public int getDies() {
         return dies;
     }
 
-    public void setDies(String dies) {
+    public void setDies(int dies) {
         this.dies = dies;
     }
 

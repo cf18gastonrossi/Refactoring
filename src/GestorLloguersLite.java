@@ -16,13 +16,13 @@ public class GestorLloguersLite {
 
     public static void main(String[] args) {
 
-        Vehicle Moto = new Vehicle("Tote","Toyota", "Básica");
-        Vehicle Coche = new Vehicle("C4","Citroen", "Premium");
-        Vehicle Triciclo = new Vehicle("Light","Dora", "Experto");
+        Vehicle Moto = new Vehicle("Tote","Toyota", 1);
+        Vehicle Coche = new Vehicle("C4","Citroen", 2);
+        Vehicle Triciclo = new Vehicle("Light","Dora", 3);
 
-        Lloguer Lloguer1 = new Lloguer("13-05-2019", "3", Moto);
-        Lloguer Lloguer2 = new Lloguer("02-01-2019", "3", Coche);
-        Lloguer Lloguer3 = new Lloguer("23-07-2018", "3", Triciclo);
+        Lloguer Lloguer1 = new Lloguer("13-05-2019", 3, Moto);
+        Lloguer Lloguer2 = new Lloguer("02-01-2019", 3, Coche);
+        Lloguer Lloguer3 = new Lloguer("23-07-2018", 3, Triciclo);
 
         Client Gaston = new Client("X5432457H", "Gastón Rossi", "6543238721");
 

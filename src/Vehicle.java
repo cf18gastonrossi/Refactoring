@@ -2,19 +2,34 @@ public class Vehicle {
 
     private String model;
     private String marca;
-    private String categoria;
+    private int categoria;
+    public final static int BASIC = 1;
+    public final static int GENERAL = 2;
+    public final static int LUXE = 3;
 
-    public Vehicle(String model, String marca, String categoria) {
+    public Vehicle(String model, String marca, int categoria) {
         this.model = model;
         this.marca = marca;
         this.categoria = categoria;
     }
 
-    public String getCategoria() {
+    public int getCategoriaNumber() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public int getCategoria() {
+        if (getCategoriaNumber() == 1){
+            return BASIC;
+        }
+        else if (getCategoriaNumber() == 2){
+            return GENERAL;
+        }
+        else{
+            return LUXE;
+        }
+    }
+
+    public void setCategoria(int categoria) {
         this.categoria = categoria;
     }
 

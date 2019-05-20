@@ -17,16 +17,8 @@ public class Vehicle {
         return categoria;
     }
 
-    public int getCategoria() {
-        if (getCategoriaNumber() == 1){
-            return BASIC;
-        }
-        else if (getCategoriaNumber() == 2){
-            return GENERAL;
-        }
-        else{
-            return LUXE;
-        }
+    public int getCategoria(){
+        return categoria;
     }
 
     public void setCategoria(int categoria) {

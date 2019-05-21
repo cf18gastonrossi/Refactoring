@@ -16,11 +16,11 @@ public class GestorLloguersLite {
 
     public static Client CreaClient() {
 
-        Vehicle Moto = new Vehicle("Tote","Toyota", 1);
-        Vehicle Coche = new Vehicle("C4","Citroen", 2);
-        Vehicle Triciclo = new Vehicle("Light","Dora", 3);
+        Vehicle Moto = new Vehicle("Tote","Toyota", Vehicle.BASIC);
+        Vehicle Coche = new Vehicle("C4","Citroen", Vehicle.GENERAL);
+        Vehicle Triciclo = new Vehicle("Light","Dora", Vehicle.LUXE);
 
-        Lloguer Lloguer1 = new Lloguer("13-05-2019", 3, Moto);
+        Lloguer Lloguer1 = new Lloguer("13-05-2019", 5, Moto);
         Lloguer Lloguer2 = new Lloguer("02-01-2019", 3, Coche);
         Lloguer Lloguer3 = new Lloguer("23-07-2018", 3, Triciclo);
 

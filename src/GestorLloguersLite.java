@@ -14,7 +14,7 @@ public class GestorLloguersLite {
         }
     }
 
-    public static void main(String[] args) {
+    public static Client CreaClient() {
 
         Vehicle Moto = new Vehicle("Tote","Toyota", 1);
         Vehicle Coche = new Vehicle("C4","Citroen", 2);
@@ -30,6 +30,8 @@ public class GestorLloguersLite {
         Gaston.afegeix(Lloguer2);
         Gaston.afegeix(Lloguer3);
 
-        InformacionCliente(Gaston, Gaston.getLloguers());
+        //InformacionCliente(Gaston, Gaston.getLloguers());
+
+        return Gaston;
     }
 }

@@ -34,7 +34,7 @@ public class Lloguer {
         return vehicle.getModel();
     }
 
-    public Vehicle getVehicle(){
+    public Vehicle getVehicle() {
         return this.vehicle;
     }
 
@@ -63,10 +63,9 @@ public class Lloguer {
     public int bonificacions() {
 
         if (this.getVehicle().getCategoria() == Vehicle.LUXE &&
-                this.getDies()>1 ) {
+                this.getDies() > 1) {
             return 2;
-        }
-        else {
+        } else {
             return 1;
         }
     }

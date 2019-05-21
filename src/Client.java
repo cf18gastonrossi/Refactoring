@@ -13,13 +13,30 @@ public class Client {
         this.lloguers = new ArrayList<Lloguer>();
     }
 
-    public String getNif()     { return nif;     }
-    public String getNom()     { return nom;     }
-    public String getTelefon() { return telefon; }
-    public ArrayList<Lloguer> getLloguers() { return lloguers; }
+    public String getNif()     {
+        return nif;
+    }
 
-    public void setNif(String nif) { this.nif = nif; }
-    public void setNom(String nom) { this.nom = nom; }
+    public String getNom()     {
+        return nom;
+    }
+
+    public String getTelefon() {
+        return telefon;
+    }
+
+    public ArrayList<Lloguer> getLloguers() {
+        return lloguers;
+    }
+
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
     public void setTelefon(String telefon) {
         this.telefon = telefon;
     }

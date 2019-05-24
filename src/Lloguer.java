@@ -3,6 +3,8 @@ public class Lloguer {
     private String data;
     private int dies;
     private Vehicle vehicle;
+    private static final double COST_PER_QUANTITAT_BASIC = 3;
+    private static final double COST_PER_QUANTITAT_GENERAL = 2;
 
     public Lloguer(String data, int dies, Vehicle vehicle) {
         this.data = data;
@@ -42,15 +44,15 @@ public class Lloguer {
         double quantitat = 0;
         switch (this.getVehicle().getCategoria()) {
             case Vehicle.BASIC:
-                quantitat += 3;
-                if (this.getDies() > 3) {
-                    quantitat += (this.getDies() - 3) * 1.5;
+                quantitat += COST_PER_QUANTITAT_BASIC;
+                if (this.getDies() > COST_PER_QUANTITAT_BASIC) {
+                    quantitat += (this.getDies() - COST_PER_QUANTITAT_BASIC) * 1.5;
                 }
                 break;
             case Vehicle.GENERAL:
                 quantitat += 4;
-                if (this.getDies() > 2) {
-                    quantitat += (this.getDies() - 2) * 2.5;
+                if (this.getDies() > COST_PER_QUANTITAT_GENERAL) {
+                    quantitat += (this.getDies() - COST_PER_QUANTITAT_GENERAL) * 2.5;
                 }
                 break;
             case Vehicle.LUXE:

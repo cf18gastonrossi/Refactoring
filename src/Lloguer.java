@@ -40,7 +40,7 @@ public class Lloguer {
         return this.vehicle;
     }
 
-    public double quantitat() {
+    public double costPerTipusDeCategoria() {
         double quantitat = 0;
         switch (this.getVehicle().getCategoria()) {
             case Vehicle.BASIC:

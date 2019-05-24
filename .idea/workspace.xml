@@ -12,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="149" />
+    <option name="myElementSize" value="133" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -218,15 +218,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestClient - 2019.05.21 at 14h 47m 04s.xml">
-      <configuration name="TestClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClient - 2019.05.21 at 14h 48m 40s.xml">
-      <configuration name="TestClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClient - 2019.05.21 at 14h 50m 38s.xml">
-      <configuration name="TestClient" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestClient - 2019.05.21 at 14h 51m 06s.xml">
       <configuration name="TestClient" configurationId="JUnit" />
     </history-entry>
@@ -246,6 +237,15 @@
       <configuration name="TestClient" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestClient - 2019.05.21 at 23h 06m 28s.xml">
+      <configuration name="TestClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClient - 2019.05.24 at 18h 40m 40s.xml">
+      <configuration name="TestClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClient - 2019.05.24 at 18h 42m 50s.xml">
+      <configuration name="TestClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClient - 2019.05.24 at 18h 44m 43s.xml">
       <configuration name="TestClient" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -283,7 +283,7 @@
     </layout>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Refactoring$TestClient.ic" NAME="TestClient Coverage Results" MODIFIED="1558716032329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Refactoring$TestClient.ic" NAME="TestClient Coverage Results" MODIFIED="1558716279070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/TestClient.java">

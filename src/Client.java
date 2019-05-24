@@ -5,6 +5,7 @@ public class Client {
     private String nom;
     private String telefon;
     private ArrayList<Lloguer> lloguers;
+    private static final double EUROS_PER_UNITAT_DE_COST = 30;
 
     public Client(String nif, String nom, String telefon) {
         this.nif = nif;
@@ -55,28 +56,39 @@ public class Client {
     }
 
     public String informe() {
-        String resultat = "Informe de lloguers del client " +
+        return composaCapsalera() +
+                composaDetall() +
+                composaPeu();
+    }
+
+    public String composaCapsalera() {
+        return "Informe de lloguers del client " +
                 getNom() +
                 " (" + getNif() + ")\n";
+    }
+
+    public String composaDetall() {
+        String resultat = "";
         for (Lloguer lloguer: lloguers) {
             // composa els resultats d'aquest lloguer
             resultat += "\t" +
                     lloguer.getVehicle().getMarca() +
                     " " +
                     lloguer.getVehicle().getModel() + ": " +
-                    (lloguer.quantitat() * 30) + "€" + "\n";
+                    (lloguer.quantitat() * EUROS_PER_UNITAT_DE_COST) + "€" + "\n";
         }
-
-        // afegeix informació final
-        resultat += "Import a pagar: " + importTotal() + "€\n" +
-                "Punts guanyats: " + bonificacionsTotals() + "\n";
         return resultat;
+    }
+
+    public String composaPeu() {
+        return "Import a pagar: " + importTotal() + "€\n" +
+                "Punts guanyats: " + bonificacionsTotals() + "\n";
     }
 
     public double importTotal() {
         double total = 0;
         for (Lloguer lloguer: lloguers){
-            total += lloguer.quantitat() * 30;
+            total += lloguer.quantitat() * EUROS_PER_UNITAT_DE_COST;
         }
         return total;
     }
